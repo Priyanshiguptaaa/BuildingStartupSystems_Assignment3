@@ -4,56 +4,143 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Open Graph metadata for rich link previews -->
-  <meta property="og:title" content="My Interactive Personal Homepage">
-  <meta property="og:description" content="Explore my career journey with interactive milestones.">
+  <meta property="og:title" content="Priyanshi Gupta - AI Researcher & Engineer">
+  <meta property="og:description" content="Explore Priyanshi Gupta’s career, research, and AI innovations.">
   <meta property="og:image" content="image.jpg">
+  <!-- Twitter Card meta tags for rich link previews -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Priyanshi Gupta - AI Researcher & Engineer">
+  <meta name="twitter:description" content="Explore Priyanshi Gupta’s career, research, and AI innovations.">
+  <meta name="twitter:image" content="image.jpg">
   <link rel="stylesheet" href="styles.css">
-  <title>My Interactive Homepage</title>
+  <title>Priyanshi Gupta - AI Researcher & Engineer</title>
 </head>
 <body>
-  <header>
-    <h1>Welcome to My Homepage</h1>
+  <header id="page-header">
+    <h1>Priyanshi Gupta</h1>
+    <p>AI Researcher | NLP & ML Engineer | Startup Founder</p>
   </header>
-  
+
   <main>
-    <!-- Personal Introduction -->
+    <!-- Introduction Section -->
     <section class="intro">
-      <img src="image.jpg" alt="Profile Picture" class="profile-pic">
+      <img src="image.jpg" alt="Priyanshi Gupta" class="profile-pic">
       <div class="bio">
-        <p>Hello! I'm [Your Name], a passionate web developer and designer. This site not only showcases my journey but also offers interactive elements to engage with my career milestones.</p>
+        <p>
+          Hi, I'm Priyanshi, an AI researcher and engineer passionate about NLP, deep learning, and AI ethics. 
+          With experience at Samsung Research, NVIDIA, and IIT Delhi, I specialize in building robust AI systems and solving complex challenges in AI adoption.
+        </p>
       </div>
     </section>
-    
-    <!-- Interactive Career Trajectory -->
+
+    <!-- New HTML Element: <details> -->
+    <section class="extra-info">
+      <details>
+        <summary>What I learned about the &lt;details&gt; element</summary>
+        <p>
+          The &lt;details&gt; element creates a widget that users can open and close to reveal hidden information. 
+          I learned that it improves content organization and helps reduce clutter by letting users choose when to see more details.
+        </p>
+      </details>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Cornell University</strong> - M.Sc. in Computer Science & Information Systems (2023-2025)</li>
+        <li><strong>Guru Gobind Singh Indraprastha University</strong> - B.Tech in Computer Science (2018-2022)</li>
+      </ul>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li><strong>Languages & Frameworks:</strong> Python, C++, Java, SQL, React, Kubernetes, GraphQL</li>
+        <li><strong>ML Libraries:</strong> PyTorch, Huggingface, LangChain, FastAPI, LlamaIndex, TVM, Transformers</li>
+        <li><strong>Tools:</strong> Airflow, Postman, RabbitMQ, PineCone, ONNX, Numba</li>
+      </ul>
+    </section>
+
+    <!-- Interactive Career Timeline -->
     <section class="career">
-      <h2>My Career Trajectory</h2>
+      <h2>Career Trajectory</h2>
       <div class="timeline-container">
         <ul class="timeline">
-          <li data-milestone="Internship at Company A" data-description="During my internship at Company A, I learned the basics of web development and collaborated on exciting projects." tabindex="0">2018</li>
-          <li data-milestone="Junior Developer at Company B" data-description="As a Junior Developer, I contributed to real-world projects, sharpening my coding skills and learning agile methodologies." tabindex="0">2019</li>
-          <li data-milestone="Mid-level Developer at Company C" data-description="At Company C, I took on more responsibility and began mentoring new team members while building robust applications." tabindex="0">2020</li>
-          <li data-milestone="Senior Developer at Company D" data-description="Now, as a Senior Developer, I lead projects, design system architectures, and drive innovation." tabindex="0">2022</li>
+          <li data-milestone="Samsung Research America" 
+              data-description="Developed an LLM-based reasoning framework for Bixby, improving response accuracy for 200M+ users." tabindex="0">
+            May 2024 - Aug 2024
+          </li>
+          <li data-milestone="IIT Delhi - NLP Research Engineer" 
+              data-description="Created the 3Ctext dataset and developed a Transformer-based model for inline citation classification (PAKDD'23)." tabindex="0">
+            Jul 2022 - Mar 2023
+          </li>
+          <li data-milestone="SYSTRAN - NLP Engineer Intern" 
+              data-description="Enhanced speech translation accuracy by 40.2% using fuzzy matching and homophone modeling." tabindex="0">
+            Feb 2022 - Apr 2022
+          </li>
+          <li data-milestone="NVIDIA - Deep Learning Engineer Intern" 
+              data-description="Fine-tuned Jasper & Citrinet ASR models with NeMo Toolkit, improving Hindi speech recognition." tabindex="0">
+            Oct 2021 - Jan 2022
+          </li>
+          <li data-milestone="NOKIA - ML Engineer Intern" 
+              data-description="Developed a multilingual PDF translation pipeline using OpenCV, Tesseract, and EasyNMT (89.5% accuracy)." tabindex="0">
+            Feb 2021 - Aug 2021
+          </li>
         </ul>
         <div class="milestone-detail">
-          <h3 id="milestone-title">Click on a year to see details</h3>
-          <p id="milestone-description">Your career milestones will appear here as you explore my journey.</p>
+          <h3 id="milestone-title">Click a timeline entry to explore my experience</h3>
+          <p id="milestone-description">Details about my career trajectory will appear here.</p>
         </div>
       </div>
     </section>
-    
-    <!-- API Data Section -->
-    <section class="api-data">
-      <h2>Random Post from JSONPlaceholder</h2>
-      <div id="api-result">
-        <!-- API content will load here -->
-      </div>
+
+    <!-- Projects Section -->
+    <section class="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>EchosysAI (Founder):</strong> AI-driven bug triage and error analysis system.</li>
+        <li><strong>ML Hardware Systems:</strong> Optimized LLMs for dialogue systems using LoRA & quantization.</li>
+        <li><strong>SafeStream:</strong> AI-powered content moderation system for real-time social media filtering.</li>
+        <li><strong>Filter Misaligned Translation Pairs:</strong> Improved dataset alignment with LASER embeddings.</li>
+      </ul>
+    </section>
+
+    <!-- Research Section -->
+    <section class="research">
+      <h2>Research</h2>
+      <ul>
+        <li><strong>Cornell Tech - Graduate Research Assistant:</strong> Developed a HITL framework for AI ethics and model steerability.</li>
+        <li><strong>Cornell NLP Lab - Researcher:</strong> Investigated model interpretability using Hessian derivatives.</li>
+        <li><strong>University of South Carolina - NLP Research Intern:</strong> Adapted NL2SQL models for sensor-driven language technology.</li>
+      </ul>
+    </section>
+
+    <!-- Publications Section -->
+    <section class="publications">
+      <h2>Publications</h2>
+      <ul>
+        <li><strong>PeriCite: Inline Citation Classification</strong> - PAKDD 2023</li>
+        <li><strong>AniMOJity: Hate Speech Detection in Indic Languages</strong> - ICON 2022</li>
+      </ul>
     </section>
   </main>
-  
+
   <footer>
-    <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+    <p>&copy; 2025 Priyanshi Gupta | <a href="https://www.linkedin.com/in/priyanshi-gupta">LinkedIn</a> | <a href="https://github.com/priyanshigupta">GitHub</a></p>
+    <!-- Analytics Tracking (Optional Extra Credit) -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'YOUR_TRACKING_ID');
+    </script>
+    -->
   </footer>
-  
+
   <script src="script.js"></script>
 </body>
 </html>

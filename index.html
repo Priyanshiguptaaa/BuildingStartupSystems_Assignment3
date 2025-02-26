@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Open Graph metadata for rich link previews -->
+  <meta property="og:title" content="My Interactive Personal Homepage">
+  <meta property="og:description" content="Explore my career journey with interactive milestones.">
+  <meta property="og:image" content="image.jpg">
+  <link rel="stylesheet" href="styles.css">
+  <title>My Interactive Homepage</title>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Homepage</h1>
+  </header>
+  
+  <main>
+    <!-- Personal Introduction -->
+    <section class="intro">
+      <img src="image.jpg" alt="Profile Picture" class="profile-pic">
+      <div class="bio">
+        <p>Hello! I'm [Your Name], a passionate web developer and designer. This site not only showcases my journey but also offers interactive elements to engage with my career milestones.</p>
+      </div>
+    </section>
+    
+    <!-- Interactive Career Trajectory -->
+    <section class="career">
+      <h2>My Career Trajectory</h2>
+      <div class="timeline-container">
+        <ul class="timeline">
+          <li data-milestone="Internship at Company A" data-description="During my internship at Company A, I learned the basics of web development and collaborated on exciting projects." tabindex="0">2018</li>
+          <li data-milestone="Junior Developer at Company B" data-description="As a Junior Developer, I contributed to real-world projects, sharpening my coding skills and learning agile methodologies." tabindex="0">2019</li>
+          <li data-milestone="Mid-level Developer at Company C" data-description="At Company C, I took on more responsibility and began mentoring new team members while building robust applications." tabindex="0">2020</li>
+          <li data-milestone="Senior Developer at Company D" data-description="Now, as a Senior Developer, I lead projects, design system architectures, and drive innovation." tabindex="0">2022</li>
+        </ul>
+        <div class="milestone-detail">
+          <h3 id="milestone-title">Click on a year to see details</h3>
+          <p id="milestone-description">Your career milestones will appear here as you explore my journey.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- API Data Section -->
+    <section class="api-data">
+      <h2>Random Post from JSONPlaceholder</h2>
+      <div id="api-result">
+        <!-- API content will load here -->
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>

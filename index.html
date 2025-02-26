@@ -127,19 +127,37 @@
     </section>
   </main>
 
-    <!-- Google tag (gtag.js) -->
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-HEEMZMCWF3"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-HEEMZMCWF3');
   </script>
 
   <footer>
     <p>&copy; 2025 Priyanshi Gupta | <a href="https://www.linkedin.com/in/priyanshiguptaaa">LinkedIn</a> | <a href="https://github.com/priyanshiguptaaa">GitHub</a></p>
+    
+    <!-- Visitor Counter Widget -->
+    <div id="visitor-counter" style="text-align: center; margin-top: 1em;">
+      <a href="https://www.hitwebcounter.com" target="_blank">
+        <img id="counter-img" src="https://hitwebcounter.com/counter/counter.php?page=YOUR_PAGE_ID&style=0006&nbdigits=5&type=ip&initCount=0" alt="Visitor Counter" border="0">
+      </a>
+    </div>
   </footer>
+
+  <script>
+    // Define your common ID (in this case, your GA ID)
+    const commonId = 'G-HEEMZMCWF3';
+    // Automatically update the hit counter URL by replacing the placeholder "YOUR_PAGE_ID"
+    const counterImg = document.getElementById('counter-img');
+    if (counterImg) {
+      counterImg.src = counterImg.src.replace('YOUR_PAGE_ID', commonId);
+    }
+  </script>
+
+
 
 
   <script src="script.js"></script>

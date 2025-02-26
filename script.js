@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Optional API Fetch Example (JSONPlaceholder)
   fetch('https://jsonplaceholder.typicode.com/posts/1')
     .then(response => response.json())
     .then(data => {
@@ -36,7 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
     })
     .catch(error => console.error('Error fetching API:', error));
 
-  // Extra Interactivity: Animate header background based on mouse movement
   document.addEventListener('mousemove', (e) => {
     const header = document.getElementById('page-header');
     if (header) {

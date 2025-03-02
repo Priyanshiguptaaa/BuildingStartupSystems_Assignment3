@@ -156,8 +156,8 @@ section ul {
   color: #2c3e50;
 }
 
-/* GitHub Projects Section */
-.github-projects {
+/* GitHub Stats Section */
+.github-stats {
   background-color: #fff;
   padding: 2em;
   border-radius: 8px;
@@ -166,29 +166,8 @@ section ul {
   margin-bottom: 2em;
 }
 
-.github-projects .repo-card {
-  margin: 1em auto;
-  max-width: 600px;
-  text-align: left;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  padding: 1em;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
-
-.github-projects .repo-card h3 {
-  margin-bottom: 0.5em;
-  color: #2c3e50;
-}
-
-.github-projects .repo-card a {
-  text-decoration: none;
-  color: #2980b9;
-}
-
-.github-projects .repo-card p {
-  font-size: 0.95em;
-  color: #555;
+.github-stats p {
+  margin: 0.5em 0;
 }
 
 /* Responsive Adjustments */

@@ -20,34 +20,24 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Fetch GitHub Projects (Public Repos)
-  const githubUsername = 'priyanshiguptaaa'; // replace with your GitHub username if different
-  const reposUrl = `https://api.github.com/users/${githubUsername}/repos`;
-  fetch(reposUrl)
+  // Fetch GitHub Stats using the GitHub User API
+  const githubUsername = 'priyanshiguptaaa'; // Replace with your GitHub username if needed
+  const userApiUrl = `https://api.github.com/users/${githubUsername}`;
+  
+  fetch(userApiUrl)
     .then(response => response.json())
     .then(data => {
-      const projectsContainer = document.getElementById('github-projects-list');
-      // Clear the loading message
-      projectsContainer.innerHTML = '';
-      if (Array.isArray(data)) {
-        data.forEach(repo => {
-          // Create a card for each repository
-          const repoCard = document.createElement('div');
-          repoCard.classList.add('repo-card');
-          repoCard.innerHTML = `
-            <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
-            <p>${repo.description ? repo.description : 'No description provided.'}</p>
-          `;
-          projectsContainer.appendChild(repoCard);
-        });
-      } else {
-        projectsContainer.innerHTML = `<p>Unable to load projects at this time.</p>`;
-      }
+      const statsContainer = document.getElementById('github-stats');
+      statsContainer.innerHTML = `
+        <p><strong>Public Repositories:</strong> ${data.public_repos}</p>
+        <p><strong>Followers:</strong> ${data.followers}</p>
+        <p><strong>Following:</strong> ${data.following}</p>
+      `;
     })
     .catch(error => {
-      console.error('Error fetching GitHub projects:', error);
-      const projectsContainer = document.getElementById('github-projects-list');
-      projectsContainer.innerHTML = `<p>Error loading projects.</p>`;
+      console.error('Error fetching GitHub stats:', error);
+      const statsContainer = document.getElementById('github-stats');
+      statsContainer.innerHTML = `<p>Error loading GitHub stats.</p>`;
     });
 
   // Extra Interactivity: Animate header background based on mouse movement
